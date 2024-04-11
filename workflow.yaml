@@ -1,0 +1,15 @@
+name: Push Event
+on:
+  push:
+    branches:
+      - '*'
+jobs:
+  webhook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send webhook
+        uses: distributhor/webhook-action@v1
+        with:
+          url: ${{ secrets.WEBHOOK_URL }}
+          method: POST
+          body: '{"event": "push", "data": ${{ toJson(github.event) }}}'
