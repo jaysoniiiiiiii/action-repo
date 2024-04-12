@@ -1,5 +1,3 @@
 print("hiii")
 
-print("jay")
-
-print
+print("jay how")
