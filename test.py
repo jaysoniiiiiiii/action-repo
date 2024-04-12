@@ -1,3 +1,2 @@
 print("hiii")
 
-print("jay")
