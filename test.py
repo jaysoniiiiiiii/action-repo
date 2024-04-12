@@ -1,3 +1,3 @@
 print("hiii")
 
-print("jay how")
+print("jay")
